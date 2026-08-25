@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Data Preprocessing Engine | Upload</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="justify-between">
+
+    <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur-md px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="h-8 w-8 rounded-lg bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg shadow-blue-500/30">
+                <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h1 class="text-lg font-bold tracking-wide text-white">Autonomous Data Preprocessing Engine</h1>
+        </div>
+        <div class="flex items-center gap-2 text-xs text-slate-400 bg-slate-950 px-3 py-1.5 rounded-full border border-slate-800">
+            <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>Docker Engine Online</span>
+        </div>
+    </header>
+
+    <main class="max-w-3xl w-full mx-auto px-6 py-16">
+        <div class="card-panel p-8 text-center space-y-6">
+            <div class="space-y-2">
+                <h2 class="text-3xl font-extrabold text-white">Upload Your Dataset</h2>
+                <p class="text-slate-400 text-sm">Upload CSV or Excel datasets to run autonomous schema profiling, anomaly checks, and LLM code generation.</p>
+            </div>
+
+            <div id="dropZone" class="dropzone-border rounded-xl p-12 text-center cursor-pointer bg-slate-950/40 group">
+                <input type="file" id="fileInput" accept=".csv, .xlsx, .xls" class="hidden">
+                <div class="space-y-4">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-slate-900 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:scale-110 transition-all">
+                        <i class="fa-solid fa-cloud-arrow-up text-3xl"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-slate-200">Click to upload or drag and drop</p>
+                        <p class="text-xs text-slate-500 mt-1">Supports CSV, XLSX, XLS (Up to 100MB)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="uploadLoader" class="hidden py-8 space-y-3">
+                <i class="fa-solid fa-circle-notch fa-spin text-4xl text-blue-500"></i>
+                <p class="text-sm text-slate-300 font-medium">Scanning dataset schema & computing distributions...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-slate-900 py-4 text-center text-xs text-slate-600">
+        Autonomous AI Preprocessing Engine &copy; 2026
+    </footer>
+
+    <script src="/static/js/upload.js"></script>
+</body>
+</html>

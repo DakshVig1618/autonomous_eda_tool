@@ -1,0 +1,38 @@
+:root {
+  --bg-dark: #090d16;
+  --bg-card: #111827;
+  --border-card: #1f2937;
+  --accent-blue: #3b82f6;
+  --accent-green: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-rose: #ef4444;
+}
+body {
+  background-color: var(--bg-dark);
+  color: #f1f5f9;
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.card-panel {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 0.75rem;
+}
+.dropzone-border {
+  border: 2px dashed #334155;
+  transition: all 0.2s ease-in-out;
+}
+.dropzone-border:hover,
+.dropzone-border.active {
+  border-color: var(--accent-blue);
+  background-color: rgba(17, 24, 39, 0.8);
+}
+.glow-button {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  transition: all 0.2s ease-in-out;
+}
+.glow-button:hover {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+}
