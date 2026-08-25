@@ -1,9 +1,0 @@
-fastapi
-uvicorn
-pandas
-numpy
-openpyxl
-python-dotenv
-jinja2
-google-genai
-docker
